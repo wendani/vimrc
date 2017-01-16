@@ -52,10 +52,15 @@ if filereadable("/etc/vim/vimrc.local")
   source /etc/vim/vimrc.local
 endif
 
-" Indentation
-set expandtab
-set softtabstop=4
-set shiftwidth=4
+" Indentation use pure spaces
+"set expandtab
+"set softtabstop=4
+"set shiftwidth=4
+"set autoindent
+
+" Indentation use pure hard tabs
+set shiftwidth=8
+set tabstop=8
 set autoindent
 
 " ctags
